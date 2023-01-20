@@ -61,9 +61,9 @@ while True:
       print(data)
       if (data.split(':')[0] == "Color"):
         h,s,v = data.split(':')[1].split(',')
-        s = int(s)
-        v = int(v)
-        h = int(h)
+        s = float(s)
+        v = float(v)
+        h = float(h)
         changeColor(h,s,v)
       elif (data == "Off"):
         changeStatus(False)
